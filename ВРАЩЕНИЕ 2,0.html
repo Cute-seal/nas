@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Пример вращения прямоугольника</title>
+ <style>
+  #rectangle {
+   width: 100px;
+   height: 500px;
+   background-color: rgb(255, 0, 119);
+   margin: 50px auto;
+   transition: transform 0.5s ease; /* добавляем плавный переход */
+  }
+ </style>
+</head>
+<body>
+ <div id="rectangle"></div>
+ <button onclick="rotate(0)">СБРОС</button>
+ <button onclick="rotate(15)">Вращать на 15 градусов</button>
+ <button onclick="rotate(45)">Вращать на 45 градусов</button>
+ <button onclick="rotate(75)">Вращать на 75 градусов</button>
+ <button onclick="rotate(90)">Вращать на 90 градусов</button>
+ <button onclick="rotate(135)">Вращать на 135 градусов</button>
+ <button onclick="rotate(180)">Вращать на 180 градусов</button>
+ <button onclick="rotate(225)">Вращать на 225 градусов</button>
+ <button onclick="rotate(-15)">Вращать на -15 градусов</button>
+ <button onclick="rotate(-45)">Вращать на -45 градусов</button>
+ <button onclick="rotate(-75)">Вращать на -75 градусов</button>
+ <button onclick="rotate(-90)">Вращать на -90 градусов</button>
+ <button onclick="rotate(-135)">Вращать на -135 градусов</button>
+ <button onclick="rotate(-180)">Вращать на -180 градусов</button>
+ <button onclick="rotate(-225)">Вращать на -225 градусов</button>
+ <script>
+  function rotate(deg) {
+   const rectangle = document.getElementById("rectangle");
+   rectangle.style.transform = "rotate(" + deg + "deg)";
+  }
+ </script>
+</body>
+</html>

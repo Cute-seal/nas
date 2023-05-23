@@ -1,0 +1,22 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39.1 — точка прерывания</title>
+    <style>
+        .example {
+            padding: 20px;color: white;} /* Очень маленькие устройства (телефоны, 600рх и вниз) */
+        @media only screen and (max-width: 600px) {.example {background: red;} } /* 600px выше) */
+        @media only screen and (min-width: 600px) {.example {background: green;} } /* 768px выше) */
+        @media only screen and (min-width: 768px) {.example {background: blue;} } /* 992px выте) */
+        @media only screen and (min-width: 992px) { .example {background: orange;} } /* 1200px выше) */
+        @media only screen and (min-width: 1200px) {.example {background: pink;} }
+        </style>
+  </head>
+  <body>
+    <h1>CSS Отзывчивые медиа запросы точки прерывания</h1>
+    <p class="example">Изменить размер окна браузера, чтобы увидеть, как цвет фона этого параграфа изменяется при разных размерах экрана.</р>
+  </body>
+  </html>

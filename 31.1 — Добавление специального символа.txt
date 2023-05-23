@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31.1 — Добавление специального символа</title>
+    <style>
+        body {
+            background-color: rgb(181, 216, 100);
+        }
+        h1 {
+        font-family: 'Niconne', cursive;
+        font-size: 50px;
+        color: #fa0a0a;
+    }
+    h1:before, h1:after {
+        content: "2746";
+        display: inline-block;
+        font-size: 60px;
+        color: #38afaa;
+        -webkit-animation: my 4s infinite alternate;
+        animation: my 4s infinite alternate;
+    }
+    h1:before {
+        margin-right: 0.5em;
+    }
+    h1:after {
+        margin-left: 0.5em;
+    }
+    @-webkit-keyframes my {
+0% {color: #2e2f92;}
+25% {color: #38afaa;}
+50% {color: #5b59a7;}
+75% {color: #f7b21c;}
+100% {color: #e12527;}
+    }
+@keyframes my {
+0% {color: #2e2f92;}
+25% {color: #38afaa;}
+50% {color: #5659a7;}
+75% {color: #f7b21c;}
+100% {color: #e12527;}
+}
+        </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto qui magnam tenetur enim vitae ab pariatur ea aperiam natus incidunt error nesciunt explicabo impedit at recusandae, ratione, dolor exercitationem?</h1>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Пример вращения фигур на HTML5</title>
+ <style>
+  /* Стиль для фигуры */
+  .shape {
+   width: 100px;
+   height: 50px;
+   background-color: rgb(255, 0, 0);
+   position: absolute;
+   top: 100px;
+   left: 100px;
+   transform-origin: center center;
+   transition: transform 1s;
+  }
+  
+  /* Стили для кнопок */
+  button {
+   margin-right: 10px;
+  }
+ </style>
+</head>
+<body>
+ <!-- Фигура прямоугольника -->
+ <div class="shape"></div>
+ 
+ <!-- Кнопки для вращения фигуры -->
+ <button onclick="rotate(0)">0&deg;</button>
+ <button onclick="rotate(45)">45&deg;</button>
+ <button onclick="rotate(90)">90&deg;</button>
+ <button onclick="rotate(135)">135&deg;</button>
+ <button onclick="rotate(180)">180&deg;</button>
+ <button onclick="rotate(225)">225&deg;</button>
+ <button onclick="rotate(270)">270&deg;</button>
+ <button onclick="rotate(315)">315&deg;</button>
+ <button onclick="rotate(360)">360&deg;</button>
+ 
+ <!-- Скрипт для вращения фигуры -->
+ <script>
+  function rotate(degrees) {
+   document.querySelector('.shape').style.transform = rotate(${degrees}deg);
+  }
+ </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39.3 — адаптивное меню навигации</title>
+    <style>
+        * {box-sizing: border-box;}
+/* Стиль верхней панели навигации */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Стиль верхних навигационных ссылок */
+.topnav a {
+    float: left;
+    display: block;
+    color: #3be211;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+} /* Изменение цвета при наведении */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+} /* На экранах шириной 600 пикселей или меньше, ссылки меню укладываются друг на друга, а не рядом друг с другом */
+@media screen and (max-width: 600px) {.topnav a {float: none; width: 100%;}}
+    </style>
+</head>
+<body>
+    Правило @media меню
+    <h2>Адаптивное меню навигации</h2>
+    <р>Измените размер окна браузера, чтобы увидеть эффект: Когда экран меньше 600pх, меню навигации будет отображаться вертикально, а не горизонтально.</р>
+<div class="topnav">
+<a href="trycss3_media_menu.php">https://www.google.ru/</a>
+<a href="trycss3 media_menu.php">https://www.google.ru/</a>
+<a href="trycss3_media_menu.php">https://www.google.ru/</a>
+</div>
+</body>
+</html>

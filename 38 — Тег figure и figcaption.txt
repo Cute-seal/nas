@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38 — Тег figure и figcaption</title>
+    <style>
+        img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            object-position: 15% 100%;
+            opacity: 1.0;
+        }
+        img:hover {
+            opacity: 0.5;
+        }
+        </style>
+</head>
+<body>
+    <h1>HTML Ter figure и figcaption</h1>
+        <р>Использовать элемент figure, чтобы сделать пометки на фото в документе, и элемент figcaption, чтобы определить подпись для фото:</р>
+        <figure>
+        <img src="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\NUBT1662.JPEG" alt= "Тюльпаны" style="width:100%">
+        <figcaption>Рис. 1 - Тюльпаны.</figcaption>
+        </figure>
+        <р>Использовать элемент &lt; figure&gt;, чтобы сделать пометки на фото в документе, и элемент &lt; figcaption &gt;, чтобы определить подпись для фото:</p>
+        <figure>
+        <img src="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Маршмеллоу.png" alt="Маршмеллоу" style="width: 100%">
+        <figcaption>Рис. 2 - Маршмеллоу.</figcaption>
+        </figure>
+</body>
+</html>

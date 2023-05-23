@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35.2 — Использование позиции объекта</title>
+    <style>
+        img {
+            width: 200px;
+            height: 300px; object-fit: cover;
+            object-position: 30% 100%;
+    }
+    </style>
+</head>
+<body>
+    <h2>Использование позиции объекта</h2>
+    <p>
+        Здесь мы будем использовать свойство object-position, чтобы расположить изображение так, чтобы большое старое здание находилось в центре:</р>
+<img src="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Ципа.jpg" alt= "Paris" width= "400" height="300">
+</body>
+</html>

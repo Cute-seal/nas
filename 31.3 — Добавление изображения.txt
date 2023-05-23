@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31.3 — Добавление изображения</title>
+    <style>
+        h1::before {
+            content: url(https://funart.pro/uploads/posts/2021-04/1618790112_17-funart_pro-p-ogromnii-gorod-krasivie-mesta-foto-17.jpg);
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque blanditiis voluptates porro perferendis? Iusto ipsa fugiat aperiam nisi eaque tempore, cum temporibus iste reiciendis, debitis, dolorem illum explicabo pariatur nesciunt?</h1>
+</body>
+</html>

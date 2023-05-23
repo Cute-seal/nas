@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Пример трансформаций CSS</title>
+ <style>
+  #rectangle {
+   width: 100px;
+   height: 50px;
+   background-color: rgb(255, 0, 136);
+   margin: 50px auto;
+   transition: transform 0.5s ease;
+  }
+ </style>
+</head>
+<body>
+ <div id="rectangle"></div>
+ <br>
+ <button onclick="rotate(0)">Повернуть на 15 градусов</button>
+ <button onclick="rotate(30)">Повернуть на 30 градусов</button>
+ <button onclick="rotate(45)">Повернуть на 45 градусов</button>
+ <br>
+ <button onclick="move(50, 0)">Переместить вправо на 50px</button>
+ <button onclick="move(0, 50)">Переместить вниз на 50px</button>
+ <br>
+ <button onclick="scale(1.5)">Увеличить в 1.5 раза</button>
+ <button onclick="scale(0.5)">Уменьшить в 0.5 раза</button>
+ <button onclick="skew(30)">Наклонить на 30 градусов</button>
+ <script>
+  function rotate(deg) {
+   const rectangle = document.getElementById("rectangle");
+   rectangle.style.transform += " rotate(" + deg + "deg)";
+  }
+  function move(x, y) {
+   const rectangle = document.getElementById("rectangle");
+   rectangle.style.transform += " translate(" + x + "px, " + y + "px)";
+  }
+  function scale(scale) {
+   const rectangle = document.getElementById("rectangle");
+   rectangle.style.transform += " scale(" + scale + ")";
+  }
+  function skew(deg) {
+   const rectangle = document.getElementById("rectangle");
+   rectangle.style.transform += " skew(" + deg + "deg)";
+  }
+ </script>
+</body>
+</html>

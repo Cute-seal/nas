@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34 - Галерея</title>
+    <style>
+        .gallery {
+            border: 3px solid #14ff27;
+        }
+        .gallery:hover {
+            border: 3px solid #066329;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        </style>
+</head>
+<body>
+    <h2>Responsive Image Gallery</h2>
+<h4>Измени размер браузера, чтобы увидеть эффект
+</h4>
+<div class="responsive">
+<div class="gallery">
+<a target=" _blank" href= "D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\AbDe.gif">
+<img src="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\NIKITI4.jpg" alt="NIKITI4" width="600" height="400">
+</a>
+<div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+Alias, beatae maiores laborum laudantium repellat iste nam inventore explicabo illo
+repudiandae a consequuntur molestiae quos assumenda voluptas. Vitae incidunt ab quas!
+</div>
+</div>
+<div class="responsive">
+<div class="gallery">
+<a target="_ blank" href="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Блинов.gif">
+    <img src="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Капибара.jpg" alt="Капибара" width="600" height="400">
+</a>
+<div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Alias, beatae maiores laborum laudantium repellat iste nam inventore explicabo illo
+    repudiandae a consequuntur molestiae quos assumenda voluptas. Vitae incidunt ab quas!</div>
+    </div>
+    </div>
+<div class="responsive">
+<div class="gallery">
+<a target="_ blank" href="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Коля.gif">
+    <img src="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Маршмеллоу.png" alt="Маршмеллоу" width="600" height="400">
+</a>
+<div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Alias, beatae maiores laborum laudantium repellat iste nam inventore explicabo illo
+    repudiandae a consequuntur molestiae quos assumenda voluptas. Vitae incidunt ab quas!
+</div>
+</div>
+<div class="responsive"></div>
+<div class="gallery">
+<a target="_blank" href="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Толик.gif">
+    <img src="D:\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Скала.jpg" alt="Скала" width="600" height="400">
+</a>
+<div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Alias, beatae maiores laborum laudantium repellat iste nam inventore explicabo illo
+    repudiandae a consequuntur molestiae quos assumenda voluptas. Vitae incidunt ab quas!
+</div>
+</div>
+<div class="clearfix"></div>
+<div style= "padding: 6px;">
+<p>В этом примере используются медиа-запросы для изменения расположения изображений на разных размерах экрана:
+    для экранов шириной более 700 пикселей будут показаны четыре изображения рядом, для экранов размером менее 700 пикселей - два изображения рядом.
+    Для экранов размером менее 500 пикселей изображения будут располагаться вертикально (100%).
+</p></div>
+</body>
+</html>

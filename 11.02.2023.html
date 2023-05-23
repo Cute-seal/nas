@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   let b  (a>1)?100:200
+    </script>
+</body>
+</html>
+if (mode == 5):
+	factor = int(input('factor:'))
+	for i in range(width):
+		for j in range(height):
+			a = pix[i, j][0]
+			b = pix[i, j][1]
+			c = pix[i, j][2]
+			S = a + b + c
+			if (S > (((255 + factor) // 2) * 3)):
+				a, b, c = 255, 255, 255
+			else:
+				a, b, c = 0, 0, 0
+			draw.point((i, j), (a, b, c))
+
+            if (mode == 4):
+	factor = int(input('factor:'))
+	for i in range(width):
+		for j in range(height):
+			a = pix[i, j][0] + factor
+			b = pix[i, j][1] + factor
+			c = pix[i, j][2] + factor
+			if (a < 0):
+				a = 0
+			if (b < 0):
+				b = 0
+			if (c < 0):
+				c = 0
+			if (a > 255):
+				a = 255
+			if (b > 255):
+				b = 255
+			if (c > 255):
+				c = 255
+			draw.point((i, j), (a, b, c))

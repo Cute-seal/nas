@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26 фильтры</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        img {
+            width: 33%;
+            height: auto;
+            float: left;
+            max-width: 235px;
+        }
+        .blur {
+            filter: blur(4px);
+        }
+        .brightness {
+            filter: brightness(250%);
+        }
+        .contrast {
+            filter: contrast(180%);
+        }
+        .grayscale {
+            border-radius: 50%;
+            filter: grayscale(100%);
+        }
+        .huerotate {
+            filter: hue-rotate(180deg);
+        }
+        </style>
+</head>
+<body>
+    <img class="blur" src="C:\Users\stud301-02\Documents\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Коля.gif" alt="Коля" width="300" height="300">
+    <img class="brightness" src="C:\Users\stud301-02\Documents\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Ласточкин.gif" alt="Ласточкин" width="300" height="300">
+    <img class="contrast" src="C:\Users\stud301-02\Documents\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Кирюша.gif" alt="Кирюша" width="300" height="300">
+    <img class="grayscale" src="C:\Users\stud301-02\Documents\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Толик.gif" alt="Толик" width="300" height="300">
+    <img class="huerotate" src="C:\Users\stud301-02\Documents\Конаков Кирилл ИС-21\Основы алгоритмы\Код.1\Блинов.gif" alt="Блинов" width="300" height="300">
+</body>
+</html>

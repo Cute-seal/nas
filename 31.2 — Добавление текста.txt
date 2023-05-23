@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31.2 — Добавление текста</title>
+    <style>
+        h1:before, h1:after {
+            content: "Yay!";
+            font-family: 'Dancing Script', cursive;
+            color: #f7b21c;
+            text-shadow: 1px 1px 2px grey;
+        }
+            h1:before {
+                margin-right: 30px;
+            }
+            h1:after {
+                margin-left: 30px;
+            }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem numquam laborum aliquid vitae fugiat et voluptatibus, eaque soluta eum sint similique, exercitationem tenetur tempore hic excepturi facere eos quo.</h1>
+</body>
+</html>

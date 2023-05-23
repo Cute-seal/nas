@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Квадрат в квадрате в квадрате</title>
+ <style>
+  .square {
+   width: 200px;
+   height: 200px;
+   background-color: #f7f7f7;
+   margin: 0 auto;
+   position: relative;
+  }
+  .square:before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   border: 1px solid #000;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+   left: 0;
+  }
+  .square .inner-square {
+   width: 50%;
+   height: 50%;
+   position: absolute;
+   top: 25%;
+   left: 25%;
+   background-color: #fff;
+   border: 1px solid #000;
+   box-sizing: border-box;
+  }
+  .square .inner-square:before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   border: 1px solid #000;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+   left: 0;
+  }
+  .square .inner-square .inner-inner-square {
+   width: 50%;
+   height: 50%;
+   position: absolute;
+   top: 25%;
+   left: 25%;
+   background-color: #f7f7f7;
+   border: 1px solid #000;
+   box-sizing: border-box;
+  }
+  .square .inner-square .inner-inner-square:before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   border: 1px solid #000;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+   left: 0;
+  }
+ </style>
+</head>
+<body>
+ <div class="square">
+  <div class="inner-square">
+   <div class="inner-inner-square"></div>
+  </div>
+ </div>
+</body>
+</html>

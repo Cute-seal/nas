@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32 — CSS трансформация</title>
+    <style>
+        div {
+            margin: 20px 0 0 100px;
+            border: 1px solid Red;
+            width: 320px;
+            height: 50px;
+        }
+        #rotate {
+            transform: rotate(5deg);
+            transform-origin: left center;
+        }
+        #move {
+            transform: translate(50px, -30px);
+        }
+        #size {
+            transform: scale(1.5, 0.6);
+        }
+        #pr {
+            transform: scale(-1, 1);
+        }
+        #skew {
+            transform: skew(10deg, 10deg);
+        }
+        </style>
+</head>
+<body>
+    <div></div>
+    <div id="rotate">Вращение блока</div>
+    <div id="move">Перемещение блока</div>
+    <div id="size">Изменение размеров</div>
+    <div id="pr">Зеркальное изображение</div>
+    <div id="skew">Искажение блока</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40 - макет</title>
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+        .item2 {
+            grid-area: menu;
+        }
+        .item3 {
+            grid-area: main;
+        }
+        .item4 {
+            grid-area: right;
+        }
+        .item5 {
+            grid-area: footer;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+            gap: 10px;
+            background-color: blueviolet;
+            padding: 10px;
+        }
+        .grid-container > div {
+            background-color: aqua;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Расположение сетки</h1>
+    <p>Этот макет сетки содержит шесть столбцов и три строки:</p>
+    <div class="grid-container">
+        <div class="item1">Header Заголовок</div>
+        <div class="item2">Menu Меню</div>
+        <div class="item3">Main Главная</div>
+        <div class="item4">Right Правый</div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+</html>

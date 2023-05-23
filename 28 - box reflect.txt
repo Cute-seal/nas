@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 - box-reflect</title>
+    <style>
+        .fill {
+            object-fit: fill;
+        }
+        .contain {
+            object-fit: contain;
+        }
+        .cover {
+            object-fit: cover;
+        }
+        .scale-down {
+            object-fit: scale-down;
+        }
+        .none {
+            object-fit: none;
+        }
+        </style>
+</head>
+<body>
+    <h2>Куамба</h2>
+    <img src="C:\Users\stud301-02\Downloads\Куамба.jpg" width="400" height="300">
+    <h2>Медведь</h2>
+    <img class="fill" src="C:\Users\stud301-02\Downloads\Медведь.jpg" alt="Медведь" style="width: 200px; height: 300px">
+    <h2>Еноты</h2>
+    <img class="contain" src="C:\Users\stud301-02\Downloads\Еноты.jpg" alt="Еноты" style="width: 200px; height: 300px">
+    <h2>Лиса</h2>
+    <img class="cover" src="C:\Users\stud301-02\Downloads\Лиса.jpeg" alt="Лиса" style="width: 200px; height: 300px">
+    <h2>Носороги</h2>
+    <img class="scale-down" src="C:\Users\stud301-02\Downloads\Носороги.jpg" alt="Носороги" style="width: 200px; height: 300px">
+    <h2>Тигр</h2>
+    <img class="scale-down" src="C:\Users\stud301-02\Downloads\Тигр.jpg" alt="Тигр" style="width: 200px; height: 300px">
+</body>
+</html>
